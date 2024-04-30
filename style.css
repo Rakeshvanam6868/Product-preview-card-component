@@ -1,0 +1,141 @@
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+/* Fraunces */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+body{
+    background-color:hsl(30, 38%, 92%);
+    font-family: 'Fraunces', sans-serif;
+}
+
+.card{
+    display:grid;
+    place-items:Center;
+    margin-top:10rem;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:50% 50%;
+    border-radius:10px;
+    height:450px;
+    width:600px;
+    background: hsl(0, 0%, 100%);
+}
+
+.left img{
+    height:450px;
+    width:300px;
+    border-radius:10px 0px 0px 10px;
+}
+
+.right{
+    display:flex;
+    justify-content:flex-start;
+    flex-direction:column;
+    padding:25px;
+    gap:20px;
+}
+
+.right h6{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing:5px;
+    font-size:14px;
+    font-weight:500;
+    color:hsl(228, 12%, 48%);
+    text-transform:uppercase;
+}
+
+.right h1{
+    color:hsl(212, 21%, 14%);
+    font-size:30px;
+    padding-right:30px;
+}
+
+.right p{
+    font-size:14px;
+    color:hsl(228, 12%, 48%);
+    line-height:25px;
+    font-weight:700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.amount {
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+}
+
+.amount h1{
+    color:hsl(158, 36%, 37%);
+}
+
+.amount p{
+    text-decoration:line-through;
+}
+
+.button{
+    display:flex;
+    align-items:center;
+    height:50px;
+    padding-left:20px;
+    width:225px;
+    border-radius:10px;
+    background:hsl(158, 36%, 37%);
+    gap:10px;
+    cursor:pointer;
+}
+
+.button img{
+      padding-left:30px;
+}
+
+.button p{
+    color:white;
+}
+
+.button:hover{
+    background:#24463A;
+}
+
+@media (width <= 431px){
+    .card{
+        margin:0px;
+    }
+
+    .container{
+        display:grid;
+        width:410px;
+        height:900px;
+        grid-template-rows:50%;
+        grid-template-columns:50%;
+    }
+
+    .left img{
+        background-image:url("./images/image-product-desktop.jpg");
+        height:400px;
+        width:400px;
+        border-radius:20px 20px 10px 10px;
+    }
+
+    .right{
+        display:flex;
+        justify-content:flex-start;
+        flex-direction:column;
+        padding:15px;
+        gap:25px;
+        width:400px;
+    }
+  
+    .button{
+        width:350px;
+    }
+
+}
